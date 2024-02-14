@@ -1,15 +1,56 @@
 {
-  "pluginAlias": "ExampleHomebridgePlugin",
+  "pluginAlias": "EufyClean",
   "pluginType": "platform",
-  "singular": true,
+  "singular": false,
+  "headerDisplay": "To configure this plugin, you must have you eufy RoboVac device id & local key.  For information about getting your eufy RoboVac's device ID & local key, go [here](https://github.com/homebridge-eufy-clean/homebridge-eufy-clean/blob/40ab5d2e640031530a296ff799ed638c29965d6c/README.md).",
   "schema": {
     "type": "object",
     "properties": {
-      "name": {
-        "title": "Name",
+      "robovacName": {
+        "title": "RoboVac Name",
         "type": "string",
         "required": true,
-        "default": "Example Dynamic Platform"
+        "default": "eufy RoboVac",
+        "description": "Enter a name for your eufy RoboVac device."
+      },
+      "robovacIp": {
+        "title": "RoboVac IP Address",
+        "type": "ipv4",
+        "required": true,
+        "default": "",
+        "description": "Enter the IP Address assigned to your eufy RoboVac device."
+      },
+      "deviceId": {
+        "title": "device ID",
+        "type": "string",
+        "required": true,
+        "default": "",
+        "description": "Enter the device ID of your eufy RoboVac device."
+      },
+      "localKey": {
+        "title": "local key",
+        "type": "string",
+        "required": true,
+        "default": "",
+        "description": "Enter the local key of your eufy RoboVac device."
+      },
+      "displayAs": {
+        "title": "RoboVac HomeKit Accessory Type",
+        "type": "string",
+        "required": true,
+        "default": "",
+        "oneOf": [
+          {"title": "Switch", "enum": ["switch"]},
+          {"title": "Fan", "enum": ["fan"]}
+        ],
+        "description": "The accessory type of your eufy RoboVac Device as displayed in the Home app."
+      },
+      "enableDebugLog": {
+        "title": "Enable Debug Logging",
+        "type": "boolean",
+        "required": true,
+        "default": false,
+        "description": "Enable for troubleshooting purposes. This will output additional logging into the Homebridge log output."
       }
     }
   }

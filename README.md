@@ -71,8 +71,8 @@ You can configure the plugin manually by modifying your Homebridge's `config.jso
   ```json
     {
       "accessoryType": "Eufy RoboVac",
-      "accessoryName": "<The name of your eufy RoboVac>",
-      "accessoryIp": "<The IP address of your eufy RoboVac>",
+      "robovacName": "<The name of your eufy RoboVac>",
+      "robovacIp": "<The IP address of your eufy RoboVac>",
       "deviceId": "<deviceId>",
       "localKey": "<localKey>",
       "displayAs": "<switch | fan, defaults to switch>",
