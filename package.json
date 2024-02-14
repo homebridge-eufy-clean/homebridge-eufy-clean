@@ -33,7 +33,7 @@
     "homebridge-plugin"
   ],
   "dependencies": {
-    "eufy-robovac": "^1.4.6"
+    "@homebridge-eufy-clean/eufy-robovac-nodejs-library": "^1.0.0"
   },
   "devDependencies": {
     "@types/node": "^18.19.0",
