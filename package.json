@@ -1,20 +1,20 @@
 {
   "private": true,
-  "displayName": "Plugin Name",
-  "name": "homebridge-plugin-name",
+  "displayName": "eufy Clean RoboVac",
+  "name": "homebridge-eufy-clean",
   "version": "1.0.0",
-  "description": "A short description about what your plugin does.",
+  "description": "A Homebridge plugin for eufy Clean RoboVac devices.",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/USERNAME/GITHUB_PROJECT_NAME.git"
+    "url": "https://github.com/homebridge-eufy-clean/homebridge-eufy-clean.git"
   },
   "bugs": {
-    "url": "https://github.com/USERNAME/GITHUB_PROJECT_NAME/issues"
+    "url": "https://github.com/homebridge-eufy-clean/homebridge-eufy-clean/issues"
   },
   "engines": {
-    "node": "^18.17.0 || ^20.9.0",
-    "homebridge": "^1.6.0"
+    "node": "^18.19.0 || ^20.11.0",
+    "homebridge": "^1.7.0"
   },
   "main": "dist/index.js",
   "scripts": {
@@ -24,15 +24,21 @@
     "prepublishOnly": "npm run lint && npm run build"
   },
   "keywords": [
+    "eufy",
+    "eufy clean",
+    "eufy clean robovac",
+    "eufy robovac",
+    "robovac",
+    "homebridge",
     "homebridge-plugin"
   ],
   "dependencies": {},
   "devDependencies": {
-    "@types/node": "^18.16.20",
+    "@types/node": "^18.19.0",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
     "@typescript-eslint/parser": "^5.62.0",
     "eslint": "^8.45.0",
-    "homebridge": "^1.6.0",
+    "homebridge": "^1.7.0",
     "nodemon": "^2.0.22",
     "rimraf": "^3.0.2",
     "ts-node": "^10.9.1",
