@@ -32,7 +32,9 @@
     "homebridge",
     "homebridge-plugin"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "eufy-robovac": "^1.4.6"
+  },
   "devDependencies": {
     "@types/node": "^18.19.0",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
