@@ -17,8 +17,8 @@ This Homebridge plugin enables you to control your eufy RoboVac using the Home A
 
 ## Prerequisites
 To install and use this plugin you must:
-* Homebridge installed (version 1.7.0 and later).
-* The latest version of supported Node.js LTS is installed, this is currently v18.19.1 or v20.11.1.
+* The latest version of Homebridge installed.
+* The latest version of a supported Node.js LTS version is installed.
 * For configuration, using Homebridge UI is recommended.
 
 
@@ -117,4 +117,7 @@ For Homebridge UI users, this is configured by selecting "Enable Debug Log", for
 <!--
 README.md Version History
 
-v2024.02.14 - Initial README.md creation.
+v2024.02.14.1914 - Initial README.md creation.
+v2024.02.14.1920 - Updated prerequisites to remove the Homebridge version number to make it section easier to maintain and updated the Node.js wording to make it clear that only the latest supported LTS Node.js versions are supported to make it easier to maintain.
+
+-->
